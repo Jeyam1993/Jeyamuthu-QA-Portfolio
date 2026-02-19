@@ -7,7 +7,7 @@
 
 <style>
 body{
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:"Segoe UI", Arial, sans-serif;
   margin:0;
   background:#f4f7fb;
   color:#333;
@@ -15,43 +15,30 @@ body{
 }
 
 .container{
-  max-width:1000px;
+  max-width:1100px;
   margin:auto;
   padding:30px 20px;
 }
 
-/* Header Card */
+/* Header */
 .header-card{
   background:white;
   padding:30px;
-  border-radius:12px;
+  border-radius:14px;
   box-shadow:0 6px 20px rgba(0,0,0,0.08);
   text-align:center;
 }
 
-h1{
-  margin:0;
-  color:#0a3d62;
-}
+h1{margin:0;color:#0a3d62;}
+.tagline{font-weight:600;color:#555;margin-top:6px;}
+.contact{margin-top:10px;font-size:14px;color:#666;}
 
-.tagline{
-  font-weight:600;
-  color:#555;
-  margin-top:6px;
-}
-
-.contact{
-  margin-top:10px;
-  font-size:14px;
-  color:#666;
-}
-
-/* Section Cards */
+/* Sections */
 .section{
   background:white;
   margin-top:25px;
   padding:25px;
-  border-radius:12px;
+  border-radius:14px;
   box-shadow:0 4px 15px rgba(0,0,0,0.06);
 }
 
@@ -61,7 +48,7 @@ h1{
   padding-bottom:6px;
 }
 
-/* Skills badges */
+/* Skills */
 .badges span{
   display:inline-block;
   background:#e6f0fa;
@@ -79,15 +66,31 @@ h1{
   padding-left:15px;
 }
 
-.timeline-item{
-  margin-bottom:15px;
+.timeline-item{margin-bottom:15px;}
+.timeline-item strong{color:#0a3d62;}
+
+/* Projects */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:15px;
 }
 
-.timeline-item strong{
+details.card{
+  background:#f9fbff;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid #e6eef7;
+}
+
+details summary{
+  cursor:pointer;
+  font-weight:600;
   color:#0a3d62;
 }
 
-/* Footer */
+details p{margin-top:10px;color:#555;font-size:14px;}
+
 footer{
   text-align:center;
   margin-top:30px;
@@ -101,6 +104,7 @@ footer{
 
 <div class="container">
 
+<!-- HEADER -->
 <div class="header-card">
 <h1>V. Jeyamuthu</h1>
 <div class="tagline">Software Test Engineer | Manual QA → SDET</div>
@@ -109,109 +113,133 @@ footer{
 </div>
 </div>
 
+<!-- CAREER OBJECTIVE -->
 <div class="section">
 <h2>Career Objective</h2>
 <p>
-Software Test Engineer with 3.8+ years of experience in manual testing,
-actively transitioning into SDET with hands-on automation skills in Java,
-Selenium, TestNG, and Cucumber. Passionate about building reliable,
-scalable, and high-quality software solutions.
+To leverage 3.8+ years of manual testing experience while transitioning into SDET,
+combining analytical skills and automation expertise to deliver high-quality software.
 </p>
 </div>
 
-<div class="section">
-<h2>Technical Skills</h2>
-
-<div class="badges">
-<span>Java</span>
-<span>Selenium</span>
-<span>Cucumber</span>
-<span>TestNG</span>
-<span>POM</span>
-<span>Data-Driven</span>
-<span>Hybrid Framework</span>
-<span>Maven</span>
-<span>Gradle</span>
-<span>Jenkins</span>
-<span>Git</span>
-<span>Functional Testing</span>
-<span>Regression</span>
-<span>UAT</span>
-</div>
-</div>
-
+<!-- PROFESSIONAL SUMMARY -->
 <div class="section">
 <h2>Professional Summary</h2>
 <ul>
-<li>3.8 years of manual testing across web & mobile applications.</li>
-<li>Strong domain expertise in health insurance workflows.</li>
-<li>Hands-on automation training with framework design.</li>
-<li>Experience in Agile collaboration and defect lifecycle.</li>
-<li>Actively transitioning to SDET role.</li>
+<li>3.8 years manual testing across web & mobile apps.</li>
+<li>Expertise in end-to-end health insurance workflows.</li>
+<li>Hands-on automation using Java, Selenium, TestNG, Cucumber.</li>
+<li>Strong Agile collaboration & defect lifecycle management.</li>
+<li>Transitioning to full-time SDET role.</li>
 </ul>
 </div>
 
+<!-- CAREER TRANSITION -->
 <div class="section">
 <h2>Career Transition Journey</h2>
-
 <div class="timeline">
-
 <div class="timeline-item">
-<strong>Non-IT → IT (2017 – 2022)</strong>
-<p>
-Transitioned into software testing through continuous learning,
-training, and hands-on project exposure, building strong QA foundations.
-</p>
+<strong>Non-IT → IT (2017–2022)</strong>
+<p>Transitioned into software testing through continuous learning.</p>
 </div>
-
 <div class="timeline-item">
-<strong>Manual QA → SDET (2022 – Present)</strong>
-<p>
-Leveraging QA experience while developing automation frameworks
-using Java, Selenium, TestNG, and Cucumber.
-</p>
+<strong>Manual QA → SDET (2022–Present)</strong>
+<p>Building automation frameworks and strengthening coding skills.</p>
 </div>
-
 </div>
 </div>
 
+<!-- TECHNICAL SKILLS -->
+<div class="section">
+<h2>Technical Skills</h2>
+<div class="badges">
+<span>Java</span><span>Selenium</span><span>Cucumber</span>
+<span>TestNG</span><span>POM</span><span>Hybrid</span>
+<span>Maven</span><span>Gradle</span><span>Jenkins</span>
+<span>Git</span><span>JIRA</span><span>Regression</span>
+</div>
+</div>
+
+<!-- SDET LEARNING -->
+<div class="section">
+<h2>SDET Learning</h2>
+<ul>
+<li>Started July 2025</li>
+<li>Framework design, waits & debugging</li>
+<li>Sprint-based automation practice</li>
+</ul>
+</div>
+
+<!-- EXPERIENCE -->
 <div class="section">
 <h2>Professional Experience</h2>
 <p><strong>Software Test Engineer — FHPL</strong> | June 2022 – Present</p>
 <ul>
-<li>Executed end-to-end testing for 600+ insurance tools.</li>
+<li>Executed testing for 600+ insurance tools.</li>
 <li>Performed functional, regression, and UAT testing.</li>
-<li>Collaborated with developers and business teams.</li>
-<li>Built strong domain expertise in claims lifecycle.</li>
+<li>Collaborated with cross-functional teams.</li>
+<li>Built domain expertise in claims lifecycle.</li>
 </ul>
 </div>
 
+<!-- PROJECTS -->
 <div class="section">
-<h2>Key Projects</h2>
-<ul>
-<li>FHPL Web Portal & Mobile App</li>
-<li>Enrollment System</li>
-<li>FHPlus Portal</li>
-<li>e-Preauthorization</li>
-<li>SPECTRA Core System</li>
-</ul>
+<h2>Project Highlights (Click each project)</h2>
+
+<div class="projects">
+
+<details class="card">
+<summary>FHPL Portal & Mobile App</summary>
+<p>Claims workflows testing, regression cycles, role-based validation and UAT support across web and mobile.</p>
+</details>
+
+<details class="card">
+<summary>Enrollment System</summary>
+<p>Enrollment lifecycle validation, premium rules testing and automation of repetitive modules.</p>
+</details>
+
+<details class="card">
+<summary>FHPlus Portal</summary>
+<p>Member dashboard testing, claims tracking validation and integration testing.</p>
+</details>
+
+<details class="card">
+<summary>e-Preauthorization</summary>
+<p>Hospital workflow testing and claim approval lifecycle validation.</p>
+</details>
+
+<details class="card">
+<summary>SPECTRA Core System</summary>
+<p>Core insurance system testing across claims, enrollment and provider modules.</p>
+</details>
+
+</div>
 </div>
 
+<!-- CERTIFICATIONS -->
 <div class="section">
-<h2>SDET Learning</h2>
+<h2>Certifications & Learning</h2>
 <ul>
-<li>Learning started July 2025</li>
-<li>Framework design, waits, debugging</li>
-<li>Sprint-based practice approach</li>
+<li>Java Selenium Automation — Greens Technology</li>
+<li>SDET Training — Crio (2025–Present)</li>
 </ul>
 </div>
 
+<!-- CAREER TARGET -->
+<div class="section">
+<h2>Career Target</h2>
+<p>
+Actively transitioning into SDET/Automation roles leveraging manual QA expertise
+and strong automation foundation.
+</p>
+</div>
+
+<!-- EDUCATION -->
 <div class="section">
 <h2>Education</h2>
 <p>
 Bachelor of Mechanical Engineering<br>
-PGP College of Engineering and Technology, Namakkal<br>
-CGPA: 6.7
+PGP College of Engineering and Technology, Namakkal — CGPA 6.7
 </p>
 </div>
 
@@ -220,6 +248,5 @@ CGPA: 6.7
 </footer>
 
 </div>
-
 </body>
 </html>
